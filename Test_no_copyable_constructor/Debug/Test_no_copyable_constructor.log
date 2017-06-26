@@ -1,0 +1,21 @@
+﻿Build started 2017/3/9 下午 03:53:09.
+     1>Project "C:\Users\victor_chang\Documents\Visual Studio 2012\Projects\little_programs\Test_no_copyable_constructor\Test_no_copyable_constructor.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\victor_chang\documents\visual studio 2012\projects\little_programs\test_no_copyable_constructor\animal.h(10): error C2248: 'NonCopy<T>::NonCopy' : cannot access private member declared in class 'NonCopy<T>'
+                 with
+                 [
+                     T=Animal
+                 ]
+                 c:\users\victor_chang\documents\visual studio 2012\projects\little_programs\test_no_copyable_constructor\non_copy_class.h(8) : see declaration of 'NonCopy<T>::NonCopy'
+                 with
+                 [
+                     T=Animal
+                 ]
+                 This diagnostic occurred in the compiler generated function 'Animal::Animal(const Animal &)'
+     1>Done Building Project "C:\Users\victor_chang\Documents\Visual Studio 2012\Projects\little_programs\Test_no_copyable_constructor\Test_no_copyable_constructor.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.69

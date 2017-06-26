@@ -1,0 +1,2 @@
+C:\Users\victor_chang\documents\visual studio 2012\Projects\little_programs\Test_C_sharp_with_protobuff\bin\Release\Test_C_sharp_with_protobuff.exe.config
+C:\Users\victor_chang\documents\visual studio 2012\Projects\little_programs\Test_C_sharp_with_protobuff\obj\Release\Test_C_sharp_with_protobuff.csprojResolveAssemblyReference.cache

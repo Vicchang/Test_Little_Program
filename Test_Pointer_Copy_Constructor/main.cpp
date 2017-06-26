@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <float.h>
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+
+class TRY{
+public:
+    TRY();
+    ~TRY();
+    TRY(TRY const &);
+
+    int *pointer;
+
+    void setPointer(int);
+};
+
+
+void TRY::setPointer(int a){
+    *pointer = a;
+
+    return;
+}
+
+
+TRY::TRY(){
+    pointer = new int();
+}
+
+
+TRY::~TRY(){
+    delete pointer;
+    pointer = NULL;
+}
+
+
+TRY::TRY(TRY const & copyTRY){
+    pointer = new int();
+    int a = *(copyTRY.pointer);
+    *pointer = a;
+}
+
+
+
+int main(){
+
+    TRY a;
+    a.setPointer(5);
+
+    TRY b = a;
+
+    b.setPointer(8);
+
+    cout << "Address of object a = " << &a << endl;
+    cout << "Address of object b = " << &b << endl;
+
+    cout << "Address of a.pointer = " << a.pointer << endl;
+    cout << "Address of b.pointer = " << b.pointer << endl;
+
+    cout << "Value in a.pointer = " << *a.pointer << endl;
+    cout << "Value in b.pointer = " << *b.pointer << endl;
+
+    system("pause");
+    return 0;
+}
